@@ -43,6 +43,7 @@ ul {
 }
 
 
+
 nav {
   display: flex;
   align-items: center;
@@ -51,17 +52,40 @@ nav {
   padding: 30px 25px;
 }
 
-nav > h3, nav > h4 {
-  margin: 0;
+.navbarbuttons {
+  display: flex;
+  margin-left: auto; /* Pushes links to the right */
 }
 
-div > link {
-  margin-right: auto;
-  color: #61DAFB;
-  
+.navbarbuttons .nav-link {
+  color: #61DAFB; /* Link color */
+  margin-right: 15px;
+  text-decoration: none;
 }
 
-img  {
+.navbarbuttons .nav-link:hover {
+  color: white; /* Hover effect for links */
+}
+
+img {
   height: 30px;
-  margin-right: 7px;
+  margin-right: 10px;
 }
+
+button.navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;base64,..."); /* Proper Bootstrap icon */
+}
+
+p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+
